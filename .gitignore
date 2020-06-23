@@ -1,6 +1,7 @@
 /.vscode
-__pycache__
-*pyc
+/__pycache__
+/insta_dm/__pycache__
+*.pyc
 config.py
 /insta_dm.egg-info
 /tests

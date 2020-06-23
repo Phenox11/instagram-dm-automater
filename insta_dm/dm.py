@@ -1,10 +1,7 @@
 from config import info
-import selenium
-from selenium import webdriver
 import time
 import logging
 from random import randint
-import selenium, time, re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
