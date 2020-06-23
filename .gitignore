@@ -1,0 +1,7 @@
+/.vscode
+/__pycache__
+config.py
+/insta_dm.egg-info
+/tests
+/geckodriver.log
+/poetry.lock
