@@ -20,10 +20,8 @@ user_agent = "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) Ap
 profile = webdriver.FirefoxProfile()
 profile.set_preference("general.useragent.override", user_agent)
 driver = webdriver.Firefox(profile, executable_path=Path, options=options)
-#driver.set_window_size(360,640)
+driver.set_window_size(360,640)
 
-#Path = r"/home/jagelta/Developement/webdriver/geckodriver"
-#driver = webdriver.Firefox(executable_path=Path)
 wait = WebDriverWait(driver, 90)
 
 def wait_until(string):
@@ -68,10 +66,9 @@ def main():
         driver.find_element_by_css_selector('.ItkAi > textarea:nth-child(1)').send_keys(info.message)
         driver.find_element_by_css_selector('div.JI_ht:nth-child(2) > button:nth-child(1)').click()
         driver.find_element_by_css_selector('.Iazdo > span:nth-child(1) > svg:nth-child(1)').click()
-
-    #driver.close()
-    #print('done')
-    #quit()
+    driver.close()
+    print('done')
+    quit()
 
 if __name__ == "__main__":
     main()
