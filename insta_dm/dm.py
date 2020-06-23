@@ -63,6 +63,7 @@ def main():
         driver.find_element_by_css_selector('.ItkAi > textarea:nth-child(1)').send_keys(info.message)
         driver.find_element_by_css_selector('div.JI_ht:nth-child(2) > button:nth-child(1)').click()
         driver.find_element_by_css_selector('.Iazdo > span:nth-child(1) > svg:nth-child(1)').click()
+        time.sleep(randint(1,5))
     driver.close()
     print('done')
     quit()
