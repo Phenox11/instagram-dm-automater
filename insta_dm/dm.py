@@ -16,7 +16,7 @@ Path = info.path
 user_agent = "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16"
 profile = webdriver.FirefoxProfile()
 profile.set_preference("general.useragent.override", user_agent)
-driver = webdriver.Firefox(profile, executable_path=Path, options=options)
+driver = webdriver.Firefox(profile, executable_path=Path)
 driver.set_window_size(360,640)
 
 wait = WebDriverWait(driver, 90)
@@ -63,7 +63,7 @@ def main():
         driver.find_element_by_css_selector('.ItkAi > textarea:nth-child(1)').send_keys(info.message)
         driver.find_element_by_css_selector('div.JI_ht:nth-child(2) > button:nth-child(1)').click()
         driver.find_element_by_css_selector('.Iazdo > span:nth-child(1) > svg:nth-child(1)').click()
-        time.sleep(randint(1,5))
+        time.sleep(randint(1,2))
     driver.close()
     print('done')
     quit()
